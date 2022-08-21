@@ -1,4 +1,5 @@
-import tags from "../../meta/tags.yml";
+import tags from "../../meta/tags.yaml";
+console.log("🚀 ~ file: tags.ts ~ line 2 ~ tags", tags);
 
 export type TagContent = {
   readonly slug: string;

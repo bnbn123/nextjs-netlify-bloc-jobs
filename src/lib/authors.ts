@@ -1,4 +1,5 @@
-import authors from "../../meta/authors.yml";
+import authors from "../../meta/authors.yaml";
+console.log("🚀 ~ file: authors.ts ~ line 2 ~ authors", authors);
 
 export type AuthorContent = {
   readonly slug: string;

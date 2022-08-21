@@ -50,7 +50,7 @@ collections:
     files:
       - name: "authors"
         label: "Authors"
-        file: "meta/authors.yml"
+        file: "meta/authors.yaml"
         description: "Author descriptions"
         fields:
           - name: authors
@@ -71,7 +71,7 @@ collections:
                 widget: "text"
       - name: "tags"
         label: "Tags"
-        file: "meta/tags.yml"
+        file: "meta/tags.yaml"
         description: "List of tags"
         fields:
           - name: tags
