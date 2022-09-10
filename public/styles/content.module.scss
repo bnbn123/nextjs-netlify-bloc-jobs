@@ -97,20 +97,25 @@
 
   ol,
   ul {
+    list-style: none;
     padding: 0 0 0 1.5rem;
     margin: 1.5rem 0 0 0;
-
     li {
+      display: inline-block;
       line-height: 1.5rem;
+      background-color: rgba(21, 132, 125, 0.4);
+      padding: 0.25em 0.5em;
     }
   }
 
-  li,
-  .content abbr[title] {
+  li {
     ol,
     ul {
       margin: 0;
     }
+  }
+
+  abbr[title] {
     text-decoration: underline double;
   }
 
