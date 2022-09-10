@@ -1,0 +1,136 @@
+.content {
+  font-family: "Ubuntu", sans-serif;
+  color: #222;
+  font-weight: 200;
+  time {
+    color: #9b9b9b;
+  }
+
+  p {
+    line-height: 1.5rem;
+    margin: 1.5rem 0 0 0;
+  }
+
+  a {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  h1 {
+    margin: 2.5rem 0 0 0;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 2rem 0 0 0;
+    line-height: 1.25em;
+  }
+
+  h2::before {
+    position: absolute;
+    margin-left: -1em;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #9b9b9b;
+    display: none;
+    content: "#";
+  }
+
+  pre {
+    display: block;
+    background-color: rgba(27, 31, 35, 0.05);
+    line-height: 1.25rem;
+    padding: 1rem;
+    overflow: auto;
+    margin: 1.75rem 0 0 0;
+    code {
+      background-color: transparent;
+      font-size: 100%;
+      padding: 0;
+    }
+  }
+
+  code {
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 85%;
+    padding: 0.2em 0.4em;
+    margin: 0;
+    background-color: rgba(27, 31, 35, 0.05);
+    border-radius: 3px;
+  }
+
+  blockquote {
+    margin: 0 1rem;
+    &::before {
+      position: absolute;
+      content: "\201C";
+      font-size: 6em;
+      font-family: roboto, serif;
+      line-height: 1.5rem;
+      margin-top: 0.1em;
+      margin-left: -0.2em;
+      z-index: -1;
+      color: #ededed;
+    }
+  }
+
+  table {
+    max-width: 100%;
+    border-spacing: 0;
+    margin-top: 1.5rem;
+
+    thead {
+      background: #f7f7f7;
+    }
+
+    th {
+      font-weight: 500;
+    }
+
+    td {
+      padding: 0.5em 1em;
+      border: 1px double #eee;
+    }
+  }
+
+  ol,
+  ul {
+    padding: 0 0 0 1.5rem;
+    margin: 1.5rem 0 0 0;
+
+    li {
+      line-height: 1.5rem;
+    }
+  }
+
+  li,
+  .content abbr[title] {
+    ol,
+    ul {
+      margin: 0;
+    }
+    text-decoration: underline double;
+  }
+
+  kbd {
+    font-family: "Ubuntu Mono", monospace;
+  }
+
+  img {
+    width: 100%;
+  }
+  @media (min-width: 769px) {
+    h2,
+    h3,
+    h4,
+    h5 {
+      position: relative;
+    }
+
+    h2::before {
+      display: block;
+    }
+  }
+}

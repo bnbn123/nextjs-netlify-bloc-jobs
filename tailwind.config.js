@@ -6,6 +6,6 @@ module.exports = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["garden", "luxury", "cmyk"],
+    themes: ["emerald", "luxury", "cmyk"],
   },
 };
