@@ -2,8 +2,8 @@ import React from "react";
 import OpenGraphMeta from "components/meta/OpenGraphMeta";
 import TwitterCardMeta from "components/meta/TwitterCardMeta";
 import BasicMeta from "components/meta/BasicMeta";
-import { SocialList } from "components/SocialList";
 import Layout from "components/Layout";
+import ContactForm from "components/ContactForm";
 
 export default function Index() {
   return (
@@ -47,8 +47,20 @@ export default function Index() {
           the clock is ticking.
         </article>
         <div className="buttons-container flex justify-evenly align-middle items-center my-6">
-          <button className="btn btn-secondary btn-wide">Get In Touch</button>
+          <label htmlFor="my-modal-4" className="btn btn-secondary btn-wide">
+            Get In Touch
+          </label>
         </div>
+
+        <input type="checkbox" id="my-modal-4" className="modal-toggle" />
+        <label
+          htmlFor="my-modal-4"
+          className="modal cursor-pointer modal-bottom sm:modal-middle"
+        >
+          <div className="modal-box relative">
+            <ContactForm />
+          </div>
+        </label>
       </div>
     </Layout>
   );

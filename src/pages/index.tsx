@@ -24,6 +24,7 @@ export default function Index() {
           </section>
           <section className="buttons-container flex justify-evenly align-middle items-center my-6">
             <button className="btn btn-primary btn-wide">Find work</button>
+            <div className="divider divider-horizontal">OR</div>
             <button className="btn btn-primary btn-wide">
               Find the right person
             </button>
