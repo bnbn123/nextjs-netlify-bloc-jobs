@@ -5,10 +5,15 @@ import { parseISO } from "date-fns";
 
 type Props = {
   post: PostContent;
+  baseurl?: string;
 };
-export default function PostItem({ post }: Props) {
+export default function PostItem({ post, baseurl = "/post" }: Props) {
+  console.log(
+    "🚀 ~ file: PostItem.tsx ~ line 11 ~ PostItem ~ baseurl",
+    baseurl
+  );
   return (
-    <Link href={"/posts/" + post.slug}>
+    <Link href={`${baseurl}/${post.slug}`}>
       <a>
         <Date date={parseISO(post.date)} />
         <h2>{post.title}</h2>
